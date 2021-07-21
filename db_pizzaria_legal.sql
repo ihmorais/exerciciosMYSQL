@@ -42,4 +42,4 @@ select * from tb_pizza where sabor like "C%";
 
 select tb_pizza.sabor, tb_pizza.preco, tb_categoria.descricao from tb_pizza inner join tb_categoria on tb_categoria.id = tb_pizza.categoria_id;
 
-select * from tb_pizza where categoria_id = 1;
+select tb_pizza.sabor, tb_pizza.preco, tb_categoria.descricao from tb_pizza inner join tb_categoria on tb_categoria.id = tb_pizza.categoria_id and tb_categoria.descricao = "Pizza Doce";
